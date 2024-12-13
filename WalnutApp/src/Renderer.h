@@ -21,8 +21,34 @@ namespace Utils
 	}
 }
 
+struct Setting
+{
+	bool isAccummulated = false;
+	bool hasEmissiveSource = false;
+	bool isMirrored = false;
+};
+
 class Renderer
 {
+private:
+	std::shared_ptr<Walnut::Image> m_FinalImage;
+	uint32_t* m_imageData = nullptr; //an array of data, holds actual image data for each pixel
+	glm::vec4* m_accumulatedColor = nullptr; //an array of color data, 4 bytes per channel == 16 bytes in total
+
+	int m_frameIndex = 1;
+
+	const Scene* m_scene = nullptr;
+	const Camera* m_camera = nullptr;
+	Setting m_setting;
+
+	struct HitPayload
+	{
+		float hitDistance;
+		glm::vec3 worldPos;
+		glm::vec3 normal;
+		int objectIndex;
+	};
+
 public:
 	Renderer();
 
@@ -31,10 +57,14 @@ public:
 
 	std::shared_ptr<Walnut::Image> GetFinalImage() const { return m_FinalImage; }
 
-private:
-	glm::vec4 TraceRay(const Ray& ray, const Scene& sphere);
+	void ResetFrameIndex() { m_frameIndex = 1; }
+	Setting& GetSetting() { return m_setting; }
 
 private:
-	std::shared_ptr<Walnut::Image> m_FinalImage;
-	uint32_t* m_ImageData = nullptr; //an array of data, holds actual image data for each pixel
+	glm::vec4 PerPixel(uint32_t x, uint32_t y);
+	glm::vec3 TraceRayRecursive(const Ray& ray, int remainingBounce);
+
+	HitPayload TraceRay(const Ray& ray);
+	HitPayload Miss();
+	HitPayload ClosestHit(const Ray& ray, float hitDistance, int objectIndex);
 };
