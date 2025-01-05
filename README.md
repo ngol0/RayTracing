@@ -11,9 +11,11 @@ This project demonstrates the power and beauty of ray tracing to create realisti
 * Pic 1 & 2: light and shadow with emissive material
 * Pic 3: spheres of different matierals (diffuse, emissive, mirror)
 
-<img src="https://github.com/ngol0/RayTracing/blob/master/1.png" width="450" title="pic 1"> <img src="https://github.com/ngol0/RayTracing/blob/master/2.png" width="450" title="pic 2">
+<img src="https://github.com/ngol0/RayTracing/blob/master/1.png" width="600" title="pic 1">
 
-<img src="https://github.com/ngol0/RayTracing/blob/master/3.png" width="900" title="pic 3">
+<img src="https://github.com/ngol0/RayTracing/blob/master/2.png" width="600" title="pic 2">
+
+<img src="https://github.com/ngol0/RayTracing/blob/master/3.png" width="600" title="pic 3">
 
 ## Attribute
 The application uses the template [Walnut](https://github.com/StudioCherno/Walnut) as a starting point. The RayTracing techniques and code references are from [Cherno's RayTracing tutorial](https://www.youtube.com/watch?v=gfW1Fhd9u9Q) and [RayTracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html).
