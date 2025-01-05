@@ -1,7 +1,7 @@
 # Ray Tracing
 
 ## Introduction
-This project demonstrates the power and beauty of ray tracing to create realistic 3D graphics. With a clean, minimal setup from Walnut, this application uses fundamental ray tracing techniques to render stunning scenes with accurate lighting, shadows, and reflections. This is made for educational purpose and the referenced sources are mentioned in the `Attribute` section.
+This project demonstrates the power and beauty of ray tracing to create realistic 3D graphics. With a clean, minimal setup from Walnut, this application uses fundamental ray tracing techniques to render 3D spheres with accurate lighting, shadows, and reflections. This is made for educational purpose and the referenced sources are mentioned in the `Attribute` section.
 
 ## Features
 * Ray Tracing Fundamentals: Implements essential ray tracing techniques, including ray-object intersection, shadows, and reflections.
