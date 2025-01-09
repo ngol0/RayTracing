@@ -22,8 +22,9 @@ This project demonstrates the power and beauty of ray tracing to create realisti
 - [Vulkan SDK](https://vulkan.lunarg.com/sdk/home#windows) (preferably a recent version)
 
 ## Running the project
-To clone, use: `git clone --recursive https://github.com/ngol0/RayTracing`.
-Once you've cloned, run `scripts/Setup.bat` to generate Visual Studio 2022 solution/project files. Hit F5 to run the project.
+- To clone, use: `git clone --recursive https://github.com/ngol0/RayTracing`.
+- Once you've cloned, run `scripts/Setup.bat` to generate Visual Studio 2022 solution/project files.
+- Hit `F5` to run the project.
 
 ## Attribute
 The application uses the template [Walnut](https://github.com/StudioCherno/Walnut) as a starting point. The RayTracing techniques and code references are from [Cherno's RayTracing tutorial](https://www.youtube.com/watch?v=gfW1Fhd9u9Q) and [RayTracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html).
