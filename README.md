@@ -1,6 +1,6 @@
 # Ray Tracing
 
-<img src="https://github.com/ngol0/RayTracing/blob/master/4.png" width="900" title="pic 2">
+<img src="https://github.com/ngol0/RayTracing/blob/master/screenshot/4.png" width="900" title="pic 2">
 
 ## Introduction
 This project demonstrates the power and beauty of ray tracing to create realistic 3D graphics. With a clean, minimal setup from [Walnut](https://github.com/StudioCherno/Walnut), this application uses fundamental ray tracing techniques to render 3D spheres with accurate lighting, shadows, and reflections. This is made for educational purpose and the referenced sources are mentioned in the `Attribute` section.
@@ -13,9 +13,9 @@ This project demonstrates the power and beauty of ray tracing to create realisti
 * Pic 1: light and shadow with emissive material
 * Pic 2: spheres of different matierals (diffuse, emissive, mirror)
 
-<img src="https://github.com/ngol0/RayTracing/blob/master/2.png" width="600" title="pic 1">
+<img src="https://github.com/ngol0/RayTracing/blob/master/screenshot/2.png" width="600" title="pic 1">
 
-<img src="https://github.com/ngol0/RayTracing/blob/master/3.png" width="600" title="pic 2">
+<img src="https://github.com/ngol0/RayTracing/blob/master/screenshot/3.png" width="600" title="pic 2">
 
 ## Requirements
 - [Visual Studio 2022](https://visualstudio.com) (not strictly required, however included setup scripts only support this)
